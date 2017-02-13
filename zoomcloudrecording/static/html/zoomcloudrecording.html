@@ -1,0 +1,28 @@
+<div class="zoomcloudrecording_block">
+<table id="meeting_table">
+	<thead>
+		<tr>
+			<th>Topic</th>
+			<th>Start Time</th>
+			<th>Recording Start</th>
+			<th>Recording End</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for meeting in meetings %}
+			{% for recording in meeting.recordings %}
+				<tr>
+					<td><a href="{{ recording.play_url }}" target="_blank">{{ meeting.topic }}</a></td>
+					<td>{{ meeting.start_time }}</td>
+					<td>{{ recording.start }}</td>
+					<td>{{ recording.end }}</td>
+				</tr>
+			{% endfor %}
+		{% empty %}
+			<tr>
+				<td colspan="4">No Recordings</td>
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>
+</div>

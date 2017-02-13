@@ -1,0 +1,12 @@
+zoomcloudrecording/__init__.py
+zoomcloudrecording/zoomcloudrecording.py
+zoomcloudrecording/static/README.txt
+zoomcloudrecording/static/css/zoomcloudrecording.css
+zoomcloudrecording/static/html/zoomcloudrecording.html
+zoomcloudrecording/static/js/src/zoomcloudrecording.js
+zoomcloudrecording_xblock.egg-info/PKG-INFO
+zoomcloudrecording_xblock.egg-info/SOURCES.txt
+zoomcloudrecording_xblock.egg-info/dependency_links.txt
+zoomcloudrecording_xblock.egg-info/entry_points.txt
+zoomcloudrecording_xblock.egg-info/requires.txt
+zoomcloudrecording_xblock.egg-info/top_level.txt

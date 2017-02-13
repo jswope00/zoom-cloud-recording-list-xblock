@@ -1,0 +1,63 @@
+/* CSS for ZoomCloudRecordingXBlock */
+
+.zoomcloudrecording_block table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.zoomcloudrecording_block td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.zoomcloudrecording_block tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/*
+ * Table information
+ */
+.dataTables_info {
+        clear: both;
+        float: left;
+}
+
+/*
+ * Pagination
+ */
+.dataTables_paginate {
+        float: right;
+        text-align: right;
+}
+
+/* Full number pagination */
+.paging_full_numbers {
+        height: 22px;
+        line-height: 22px;
+}
+
+.paging_full_numbers a.first,
+.paging_full_numbers a.previous,
+.paging_full_numbers a.next,
+.paging_full_numbers a.last {
+        display: none;
+}
+
+.paging_full_numbers a.paginate_button,
+.paging_full_numbers a.paginate_active {
+        padding: 2px 5px;
+        margin: 0 3px;
+        cursor: pointer;
+        *cursor: hand;
+        color: #0000ee;
+}
+
+.paging_full_numbers a.paginate_button:hover {
+        text-decoration: none;
+}
+
+.paging_full_numbers a.paginate_active {
+        text-decoration: underline;
+}

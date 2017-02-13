@@ -1,0 +1,56 @@
+<div class="wrapper-comp-settings is-active editor-with-buttons" id="settings-tab">
+  <ul class="list-input settings-list">
+    <li class="field comp-setting-entry is-set">
+      <div class="wrapper-comp-setting">
+        <label class="label setting-label" for="host_id">Host ID</label>
+        <input class="input setting-input" name="host_id" id="host_id" type="text" value="{{host_id}}" />
+      </div>
+      <span class="tip setting-help">Zoom Host ID</span>
+    </li>
+    <li class="field comp-setting-entry is-set">
+      <div class="wrapper-comp-setting">
+        <label class="label setting-label" for="meeting_number">Meeting Number</label>
+        <input class="input setting-input" name="meeting_number" id="meeting_number" type="text" value="{{meeting_number}}" />
+      </div>
+      <span class="tip setting-help">Zoom Meeting Number</span>
+    </li>
+    <li class="field comp-setting-entry is-set">
+      <div class="wrapper-comp-setting">
+        <label class="label setting-label" for="from_date">Meeting start after (MM/dd/yyyy hh:mm a)</label>
+        <input class="input setting-input" name="from_date" id="from_date" type="text" value="{{from_date}}" />
+      </div>
+      <span class="tip setting-help">Show meetings that started after this date (Example: 11/21/2016 00:00 AM)</span>
+    </li>
+    <li class="field comp-setting-entry is-set">
+      <div class="wrapper-comp-setting">
+        <label class="label setting-label" for="to_date">Meeting start before (MM/dd/yyyy hh:mm a)</label>
+        <input class="input setting-input" name="to_date" id="to_date" type="text" value="{{to_date}}" />
+      </div>
+      <span class="tip setting-help">Show meetings that started before this date (Example: 12/20/2016 00:00 PM)</span>
+    </li>
+    <li class="field comp-setting-entry is-set">
+      <div class="wrapper-comp-setting">
+        <label class="label setting-label" for="page_size">Page Size</label>
+        <input class="input setting-input" name="page_size" id="page_size" type="number" value="{{page_size}}" />
+      </div>
+      <span class="tip setting-help"></span>
+    </li>
+    <li class="field comp-setting-entry is-set">
+      <div class="wrapper-comp-setting">
+        <label class="label setting-label" for="page_number">Page Number</label>
+        <input class="input setting-input" name="page_number" id="page_number" type="number" value="{{page_number}}" />
+      </div>
+      <span class="tip setting-help"></span>
+    </li>
+  </ul>
+  <div class="xblock-actions">
+    <ul>
+      <li class="action-item">
+        <a href="#" class="button action-primary save-button">Save</a>
+      </li>
+      <li class="action-item">
+        <a href="#" class="button cancel-button">Cancel</a>
+      </li>
+    </ul>
+  </div>
+</div>
