@@ -127,7 +127,7 @@ class ZoomCloudRecordingXBlock(XBlock):
                 d = dict(topic=meeting['topic'], start_time=start_date, recordings=[])
 
                 for recording in meeting['recording_files']:
-		    if recording['file_type'] == 'MP4':
+		    if recording['file_size'] and recording['file_type'] == 'MP4':
                         rec = dict(start=recording['recording_start'][:-4],
                                    end=recording['recording_end'][:-4],
                                    play_url=recording['play_url'])
