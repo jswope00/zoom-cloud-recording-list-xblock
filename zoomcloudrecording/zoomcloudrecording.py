@@ -7,6 +7,7 @@ from xblock.core import XBlock
 from xblock.fields import Scope, Integer, String
 from xblock.fragment import Fragment
 
+from django.conf import settings
 from django.template import Context, Template
 
 
@@ -33,8 +34,8 @@ class ZoomCloudRecordingXBlock(XBlock):
     def get_recording_list(self):
         url = 'https://api.zoom.us/v1/recording/list'
         data = {
-            'api_key': 'NN6lybiURCaWt6y8UOaCOQ',
-            'api_secret': 'moFKX8zhc9O9Ok5LWe2tGld5yz9zT5ELHutF',
+            'api_key': settings.ZOOM_API_KEY,
+            'api_secret': settings.ZOOM_API_SECRET,
             'host_id': self.host_id,
             'page_number': self.page_number
         }
