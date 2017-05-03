@@ -21,21 +21,21 @@ sudo -u edxapp /edx/bin/pip.edxapp install -U --no-deps zoom-cloud-recording-lis
 Configuration
 -------------
 
-Added following two keys in lms.auth.json and cms.auth.json
+Added following two keys in `lms.auth.json` and `cms.auth.json`
 
 ```
 "ZOOM_API_KEY":"YOUR_ZOOM_API_KEY",
 "ZOOM_API_SECRET":"YOUR_ZOOM_API_SECRET"
 ```
 
-Added following lines in edx-platform/lms/envs/aws.py and edx-platform/cms/envs/aws.py
+Added following lines in `edx-platform/lms/envs/aws.py` and `edx-platform/cms/envs/aws.py`
 
 ```
 ZOOM_API_KEY = AUTH_TOKENS.get("ZOOM_API_KEY")
 ZOOM_API_SECRET = AUTH_TOKENS.get("ZOOM_API_SECRET")
 ```
 
-Added following lines in edx-platform/lms/envs/common.py and edx-platform/cms/envs/common.py
+Added following lines in `edx-platform/lms/envs/common.py` and `edx-platform/cms/envs/common.py`
 
 ```
 ZOOM_API_KEY = None
